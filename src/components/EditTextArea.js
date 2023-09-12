@@ -18,7 +18,8 @@ const EditTextArea = ({title, value, onChange, placeholder}) => {
           fontWeight: "bold",
         }}
         placeholder={placeholder}
-        multiline
+        multiline={true}
+        numberOfLines={4}
       />
     </View>
   );
