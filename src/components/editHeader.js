@@ -4,7 +4,7 @@ import {useRouter} from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 
-const header = () => {
+const EditHeader = () => {
   const router = useRouter();
 
   const handleBackPress = () => {
@@ -29,4 +29,4 @@ const header = () => {
   );
 }
 
-export default header
+export default EditHeader

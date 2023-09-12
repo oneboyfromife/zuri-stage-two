@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const detailCard = ({title, value}) => {
+const DetailCard = ({title, value}) => {
   return (
     <View>
       <View
@@ -32,6 +32,6 @@ const detailCard = ({title, value}) => {
   );
 }
 
-export default detailCard
+export default DetailCard
 
 const styles = StyleSheet.create({})

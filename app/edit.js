@@ -2,8 +2,8 @@ import {SafeAreaView, ScrollView, StyleSheet, Text, ToastAndroid, View} from "re
 import React, {useContext, useState} from "react";
 import {DataContext} from "../src/context";
 import {useRouter} from "expo-router";
-import Ionicons from "@expo/vector-icons/Ionicons";
 import EditInput from "../src/components/EditInput";
+import EditHeader from "../src/components/EditHeader";
 import EditTextArea from "../src/components/EditTextArea";
 import {TouchableOpacity} from "react-native-gesture-handler";
 
@@ -22,7 +22,7 @@ const edit = () => {
 
   return (
     <SafeAreaView>
-      <editHeader />
+      <EditHeader />
 
       <ScrollView showsVerticalScrollIndicator={false} style={{
         paddingVertical: 20,

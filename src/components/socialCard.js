@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { COLORS } from '../constants/theme';
 
-const socialCard = ({slack, github}) => {
+const SocialCard = ({slack, github}) => {
   return (
     <View>
       <View
@@ -57,6 +57,6 @@ const socialCard = ({slack, github}) => {
   );
 }
 
-export default socialCard
+export default SocialCard
 
 const styles = StyleSheet.create({})

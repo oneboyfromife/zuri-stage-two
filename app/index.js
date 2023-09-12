@@ -7,10 +7,13 @@ import {
   View,
 } from "react-native";
 import React, {useContext} from "react";
+
 import {DataContext} from "../src/context";
 import {GetHeight, GetWidth} from "../src/utilities/dimension";
 import {COLORS} from "../src/constants/theme";
-import detailCard from "../src/components/detailCard";
+
+import DetailCard from "../src/components/DetailCard";
+import SocialCard from "../src/components/SocialCard";
 
 const index = () => {
   const {data} = useContext(DataContext);
@@ -55,23 +58,23 @@ const index = () => {
             marginBottom: 10,
           }}
         >
-          <detailCard title="Name" value={data.name} />
+          <DetailCard title="Name" value={data.name} />
         </View>
         <View
           style={{
             marginBottom: 10,
           }}
         >
-          <detailCard title="Address" value={data.address} />
+          <DetailCard title="Address" value={data.address} />
         </View>
         <View
           style={{
             marginBottom: 10,
           }}
         >
-          <detailCard title="Bio" value={data.bio} />
+          <DetailCard title="Bio" value={data.bio} />
         </View>
-        <socialCard slack={data.slackHandle} github={data.githubHandle} />
+        <SocialCard slack={data.slackHandle} github={data.githubHandle} />
       </View>
 
       <View
@@ -112,6 +115,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FAFAFC",
     paddingHorizontal: 20,
     paddingTop: 40,
+    paddingBottom: 20,
     justifyContent: "space-between",
   },
   imgContact: {
