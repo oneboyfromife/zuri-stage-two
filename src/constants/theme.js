@@ -6,11 +6,5 @@ const COLORS = {
   lightWhite: "#FAFAFC",
 };
 
-const FONT = {
-  regular: "DMRegular",
-  medium: "DMMedium",
-  bold: "DMBold",
-};
 
-
-export { COLORS, FONT };
+export { COLORS };

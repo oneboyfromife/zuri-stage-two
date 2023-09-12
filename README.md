@@ -1,4 +1,14 @@
-# zuri-stage-two
+# ZURI CV APP
+
+## About The App
+
+OVERVIEW
+It is an app that renders CV details which can be edited in the edit screen
+
+FUNCTIONALTIES
+1. Displays User CV details
+2. Edit CV Details
+3. Hot Refresh of the CV details when changes
 
 ## Get Started
 
