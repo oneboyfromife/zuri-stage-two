@@ -2,14 +2,20 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { COLORS } from '../constants/theme';
 
+import Ionicons from "@expo/vector-icons/Ionicons";
+
 const SocialCard = ({slack, github}) => {
   return (
     <View>
       <View
         style={{
+          padding: 10,
           borderRadius: 10,
           backgroundColor: COLORS.primary,
           marginBottom: 10,
+          width: 70,
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <Text

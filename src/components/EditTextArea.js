@@ -10,6 +10,9 @@ const EditTextArea = ({title, value, onChange, placeholder}) => {
       <TextInput
         value={value}
         onChangeText={onChange}
+        placeholder={placeholder}
+        multiline={true}
+        numberOfLines={4}
         style={{
           borderWidth: 0.5,
           borderColor: COLORS.primary,
@@ -17,9 +20,6 @@ const EditTextArea = ({title, value, onChange, placeholder}) => {
           fontSize: 16,
           fontWeight: "bold",
         }}
-        placeholder={placeholder}
-        multiline={true}
-        numberOfLines={4}
       />
     </View>
   );

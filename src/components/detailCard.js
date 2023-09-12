@@ -1,14 +1,19 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { COLORS } from '../constants/theme';
 
 const DetailCard = ({title, value}) => {
   return (
     <View>
       <View
         style={{
+          padding: 10,
           borderRadius: 10,
           backgroundColor: COLORS.primary,
           marginBottom: 10,
+          width: 80,
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <Text

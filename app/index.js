@@ -1,5 +1,6 @@
 import {
   Image,
+  Pressable,
   SafeAreaView,
   StyleSheet,
   Text,
@@ -14,6 +15,7 @@ import {COLORS} from "../src/constants/theme";
 
 import DetailCard from "../src/components/DetailCard";
 import SocialCard from "../src/components/SocialCard";
+import { Link } from "expo-router";
 
 const index = () => {
   const {data} = useContext(DataContext);
@@ -56,6 +58,7 @@ const index = () => {
         <View
           style={{
             marginBottom: 10,
+            marginTop: 20
           }}
         >
           <DetailCard title="Name" value={data.name} />
@@ -95,7 +98,7 @@ const index = () => {
             <Text
               style={{
                 color: COLORS.white,
-                fontSize: GetFontSize(18),
+                fontSize: 18,
               }}
             >
               Edit
@@ -113,7 +116,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#FAFAFC",
-    paddingHorizontal: 20,
+    paddingVertical: 20,
     paddingTop: 40,
     paddingBottom: 20,
     justifyContent: "space-between",
