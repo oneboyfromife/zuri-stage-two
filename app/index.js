@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FAFAFC",
     paddingVertical: 20,
     paddingTop: 40,
-    paddingBottom: 20,
+    paddingBottom: 10,
     justifyContent: "space-between",
   },
   imgContact: {
@@ -126,8 +126,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   img: {
-    width: GetWidth(80),
-    height: GetHeight(80),
+    width: 80,
+    height: 80,
   },
   imgWrapper: {
     borderRadius: "50%",

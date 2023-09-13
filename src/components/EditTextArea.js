@@ -1,7 +1,7 @@
 import {TextInput, View, Text} from "react-native";
 import {COLORS} from "../constants/theme";
 
-const EditTextArea = ({title, value, onChange, placeholder}) => {
+const EditTextArea = ({title, value, onChangeText}) => {
   return (
     <View style={{width: "100%", paddingVertical: 5, marginBottom: 5}}>
       <Text style={{fontSize: 12, marginBottom: 7, color: COLORS.primary}}>
@@ -9,8 +9,7 @@ const EditTextArea = ({title, value, onChange, placeholder}) => {
       </Text>
       <TextInput
         value={value}
-        onChangeText={onChange}
-        placeholder={placeholder}
+        onChangeText={onChangeText}
         multiline={true}
         numberOfLines={4}
         style={{
@@ -18,7 +17,8 @@ const EditTextArea = ({title, value, onChange, placeholder}) => {
           borderColor: COLORS.primary,
           padding: 5,
           fontSize: 16,
-          fontWeight: "bold",
+          fontStyle: "italic",
+          color: "gray",
         }}
       />
     </View>
