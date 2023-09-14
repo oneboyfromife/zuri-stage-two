@@ -10,7 +10,7 @@ FUNCTIONALTIES
 2. Edit CV Details
 3. Hot Refresh of the CV details when changes
 
-## [App on Appetize](1https://appetize.io/app/vpzhg573eznd2zz4uwvgunlu34?device=pixel4&osVersion=11.0&scale=75) 
+## [App on Appetize](https://appetize.io/app/vpzhg573eznd2zz4uwvgunlu34?device=pixel4&osVersion=11.0&scale=75) 
 
 ## Get Started
 
